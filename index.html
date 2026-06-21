@@ -9,46 +9,36 @@
 <body>
     <main>
     <h1>Formulario de Registro</h1>
-
-        <form id="formulario">
+        <form id="formulario" novalidate>
             <div>
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" required>
-                <small id="errorNombre" class="error"></small>
+                <input type="text" id="nombre">            
             </div>
-
             <div>
                 <label for="email">Email:</label>
-                <input type="email" id="email" required>
-                <small id="errorEmail" class="error"></small>
+                <input type="email" id="email">
             </div>
-
             <div>
                 <label for="edad">Edad:</label>
-                <input type="number" id="edad" required>
-                <small id="errorEdad" class="error"></small>
+                <input type="number" id="edad">
             </div>
-
             <div>
                 <label for="pais">País:</label>
-                <select id="pais" required>
+                <select id="pais">
                     <option value="">Seleccione...</option>
                     <option value="Argentina">Argentina</option>
                     <option value="Uruguay">Uruguay</option>
                     <option value="Chile">Chile</option>
                     <option value="Brasil">Brasil</option>
                     <option value="Paraguay">Paraguay</option>
-                    <option value="Bolivia">Bolivia</option>                
+                    <option value="Bolivia">Bolivia</option>
                 </select>
-                <small id="errorPais" class="error"></small>
             </div>
-
             <div>
                 <label>
-                    <input type="checkbox" id="terminos" required>
+                    <input type="checkbox" id="terminos">
                     Acepto los términos y condiciones
                 </label>
-                <small id="errorTerminos" class="error"></small>
             </div>
             <button type="submit">Enviar</button>
         </form>
